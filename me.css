@@ -1,2 +1,43 @@
-h1 { color:blue; }
-h2 { color:red; }
+h1 {
+  color: blue;
+  text-align: center;
+  font-size: 2.5em;
+  text-shadow: 2px 2px 4px lightgray;
+}
+
+h2 {
+  color: red;
+  font-size: 2em;
+  margin-top: 20px;
+}
+
+h1:hover, h2:hover {
+  color: red;
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}
+
+body {
+  text-align: center;
+}
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body {
+  background: linear-gradient(to bottom, #f0f8ff, #dbeafe);
+  font-family: Arial, sans-serif;
+}
+img {
+  border-radius: 20px;
+  display: block;
+  margin: 20px auto;
+}
+
+img:hover {
+  color: orange;
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}
