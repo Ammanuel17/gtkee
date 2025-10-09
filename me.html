@@ -1,23 +1,22 @@
 <!doctype html>
 <html lang="en">
     <!--
-    Athour: Amanuale Yimenu
+    Athour: Arnold
     -->
 <head>
     <meta charset="utf-8">
     <title>Hello Workd</title>
-        <link rel="stylesheet" href="hello-world.css">
+        <link rel="stylesheet" href="me.css">
     </head>
     <body>
-      <h1>Hello World  - Amanuale Yimenu</h1>
+        <h1>Getting to know each other  - Amanuale Yimenu</h1>
       <a href="mailto:Amanualeyimenu@lewisu.edu">Email</a>
       <h2>Version 2</h2>
 
           <img src="me-300-by-300.png" alt="Thumbnail Photo">
-          <img src="me-800-by-800.png" alt="Large Photo" width="800">
 
       <h3>Introduction</h3>
-      <p>My name is Amanuale and I am a frshamn at Lewis.</p>
+      <p>My name is Amanuale and I am a freshman at Lewis.</p>
       <h4>what I hope to Learn in this Course</h4>
       <ul>
           <li>HTML</li>
@@ -34,7 +33,51 @@
           <li> Nature walks</li>
           <a href = "https://www.adidas.com/us/blog/on-the-field-soccer-positions-explained">Soccer Explained</a>
       </ul>
-      <h5>Fun fact</h5>
-      <p>I was born in Johannesburg South Africa </p>
+<img src="me-800-by-800.png" alt="Large Photo" width="800">
+
+      <h4>My Weekly Class Schedule</h4>
+<table border="1" cellpadding="8" cellspacing="0">
+  <tr>
+    <th>Day</th>
+    <th>Class</th>
+    <th>Time</th>
+  </tr>
+  <tr>
+    <td>Monday</td>
+    <td>Intro to Comp Sci</td>
+    <td>10:00 AM</td>
+  </tr>
+  <tr>
+    <td>Tuesday</td>
+    <td>Intro to Linux</td>
+    <td>9:30AM</td>
+  </tr>
+  <tr>
+    <td>Wednesday</td>
+    <td>Wicked Problems</td>
+    <td>2:00 PM</td>
+  </tr>
+</table>
+
+<h5>Fun Facts</h5>
+<p id="funFact">I was born in Johannesburg, South Africa.</p>
+<button onclick="showFact()">Show Another Fun Fact</button>
+
+<script>
+  const facts = [
+    "I love playing soccer.",
+    "I enjoy exploring nature trails.",
+    "I can speak more than one language.",
+    "I was born in Johannesburg, South Africa."
+  ];
+
+  function showFact() {
+    const fact = facts[Math.floor(Math.random() * facts.length)];
+    document.getElementById("funFact").textContent = fact;
+  }
+</script>
+
+      
+
     </body>
 </html>
